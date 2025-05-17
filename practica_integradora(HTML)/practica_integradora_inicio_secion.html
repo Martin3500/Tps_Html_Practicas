@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso al Sistema</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle,rgba(117, 205, 246, 0.789), rgb(255, 255, 255));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 3pc;
+      border: 0.5pc, solid  ;
+      border-color: rgba(0, 255, 225, 0.150);
+      border-radius: 0.5pc;
+      width: 30pc;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 1pc;
+    }
+
+    label {
+      display: block;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.8pc;
+      box-sizing: border-box;
+      font-size: 1.1pc;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .actions a {
+      font-size: 0.9em;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .actions a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Ingreso al Sistema</h2>
+    <br>
+    <form action="procesar_login.html" method="post">
+      <div class="form-group">
+        <label for="usuario">Nombre de usuario</label>
+        <br>
+        <input type="text" id="usuario" name="usuario" required>
+
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <br>
+        <input type="password" id="contrasena" name="contrasena" required>
+      </div>
+
+      <div class="actions">
+        <a href="recuperar-contrasena.html">¿Olvidaste tu contraseña?</a>
+      </div>
+      <br>
+      
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+</body>
+</html>

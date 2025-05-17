@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle, rgba(117, 205, 246, 0.789), rgb(255, 255, 255));
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .cv-container {
+      background-color: white;
+      padding: 3pc;
+      border: 0.5pc solid rgba(0, 255, 225, 0.150);
+      border-radius: 0.5pc;
+      width: 40pc;
+      max-height: 95vh;
+      overflow-y: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+      width: 100%;
+      padding: 0.8pc;
+      box-sizing: border-box;
+      font-size: 1.1pc;
+      margin-top: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <h2>Carga Curriculum Vitae</h2>
+
+    <!-- Datos Personales -->
+    <div class="section">
+      <h3>Datos Personales</h3>
+      <label>Nombre completo:</label>
+      <input type="text">
+      
+      <label>DNI o Identificación:</label>
+      <input type="text">
+
+      <label>Fecha de nacimiento:</label>
+      <input type="date">
+
+      <label>Teléfono:</label>
+      <input type="tel">
+
+      <label>Correo electrónico:</label>
+      <input type="email">
+
+      <label>Dirección:</label>
+      <input type="text">
+
+      <label>Nacionalidad:</label>
+      <input type="text">
+
+      <label>Estado civil:</label>
+      <input type="text">
+    </div>
+
+    <!-- Información Académica -->
+    <div class="section">
+      <h3>Información Académica</h3>
+      <label>Último título obtenido:</label>
+      <input type="text">
+
+      <label>Institución educativa:</label>
+      <input type="text">
+
+      <label>Año de finalización:</label>
+      <input type="text">
+
+      <label>Otros cursos o capacitaciones:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <!-- Experiencia Laboral -->
+    <div class="section">
+      <h3>Experiencia Laboral</h3>
+      <label>Puesto más reciente:</label>
+      <input type="text">
+
+      <label>Empresa:</label>
+      <input type="text">
+
+      <label>Desde:</label>
+      <input type="date">
+
+      <label>Hasta:</label>
+      <input type="date">
+
+      <label>Descripción de tareas:</label>
+      <textarea rows="3"></textarea>
+
+      <label>Otros trabajos anteriores:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <!-- Referencias -->
+    <div class="section">
+      <h3>Referencias</h3>
+      <label>Nombre:</label>
+      <input type="text">
+
+      <label>Relación:</label>
+      <input type="text">
+
+      <label>Teléfono o email:</label>
+      <input type="text">
+
+      <label>Otras referencias:</label>
+      <textarea rows="3"></textarea>
+    </div>
+
+    <button type="submit">Enviar CV</button>
+  </div>
+</body>
+</html>
