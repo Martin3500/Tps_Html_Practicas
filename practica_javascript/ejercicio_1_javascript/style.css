@@ -1,0 +1,21 @@
+body{
+    background-color: #7fffd4;
+}
+form{
+    background:linear-gradient(to left, #ffffff00,#00ff5ecd ,#00ff5ecd) ;
+    justify-items: center;
+    align-items: center;
+}
+button{
+    background-color: #437b5f;
+    border-radius: 0.2pc;
+    border:0.25pc solid #2f2f2fd3;
+    margin: 1pc;
+    padding: 1pc;
+    font-size: 1.5pc;
+    justify-items: center;
+    align-items: center;
+}
+button:hover{
+    background-color: #85fcc0;
+}
