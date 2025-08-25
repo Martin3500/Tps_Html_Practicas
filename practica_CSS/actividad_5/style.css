@@ -1,0 +1,27 @@
+#cabesera { 
+    background-color: #5a8dc7;
+    display: flex;
+    flex: 0.2;
+}
+#cuerpo { 
+    background-color: #4968c7;
+    display: flex;
+    flex: 0.8;
+}
+#pie{
+    background-color: #000968;
+    display: flex;
+    flex: 0.2;
+}
+div{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column; /* dirección horizontal */
+    height: 100vh;
+    margin: 0pc;
+    color:antiquewhite;
+}
