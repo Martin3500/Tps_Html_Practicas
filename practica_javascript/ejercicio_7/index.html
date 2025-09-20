@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+    </head>
+    <body>
+     
+        <label>Procesador :</label>
+        <select id="procesador">
+            <option value="400">Intel I3</option>
+            <option value="600">Intel I5</option>
+            <option value="800">Intel I7</option>
+        </select>
+        <br><br>
+        <label>Monitor :</label>
+        <select id="monitor">
+            <option value="250">Samsung 20'</option>
+            <option value="350">Samsung 22'</option>
+            <option value="500">Samsung 26'</option>
+        </select>
+        <br><br>
+        <label>Disco duro :</label>
+        <select id="discoDuro">
+            <option value="300">500 Gb</option>
+            <option value="440">1 Tb</option>
+            <option value="500">3 Tb</option>
+        </select>
+        <br><br>
+        <button onclick="CalcularCosto()">Calcular costo</button>
+        <br><br>
+        <label>Precio final es: </label>
+        <input type="text" value="$ - - - - - - - - " id="precioFinal" readonly>
+        
+    </body>
+</html>
