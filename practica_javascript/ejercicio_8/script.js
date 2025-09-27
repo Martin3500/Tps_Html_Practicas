@@ -36,6 +36,6 @@ function verificacionRespuestas(){
     alert("acertaste en: "+String(contador_aciertos)+" Y te equivocaste en: "+ String(contador_equivocadas));
 }
 
-//window.onload = function(){pizzaSelec()} 
+
 
 
